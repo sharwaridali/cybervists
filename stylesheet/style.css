@@ -390,7 +390,197 @@ body {
             }
         }
 
-/* Services Section - Fixed */
+/* Team Section */
+.team-section {
+    padding: 4rem 0;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+.team-section-title{
+    color: #1f2937 !important;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-top: 90px;
+    z-index: 2;
+}
+
+.team-accent-divider {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, rgb(37, 99, 235), rgb(255, 111, 97));
+    margin: 0 auto 3rem;
+    border-radius: 2px;
+}
+
+
+.team-section h2 {
+    color: #1f2937;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 90px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    text-align: center;
+    position: relative;
+}
+
+.team-member-circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Single blue gradient rotating circle */
+.circle-blue {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(37, 99, 235);
+    border-radius: 50%;
+    border-top: 3px solid transparent;
+    border-right: 3px solid transparent;
+    animation: rotateClockwise 3s linear infinite;
+
+}
+
+
+
+/* Image placeholder */
+.team-member-image {
+    width: 140px;
+    height: 140px;
+    background-color: #f8fafc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border: 3px solid white;
+}
+
+.team-member-image::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+/* Member info */
+.team-member h4 {
+    color: #1f2937;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.team-member .position {
+    color: #6b7280;
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Decorative elements - removed */
+
+/* Animations */
+@keyframes rotateClockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-section {
+        padding: 3rem 0;
+    }
+    
+    .team-section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        padding-top: 90px;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+    }
+    
+    .team-member-circle {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .team-member-image {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .team-member h4 {
+        font-size: 1.1rem;
+    }
+    
+    .team-member .position {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-section h2 {
+        font-size: 1.8rem;
+        padding-top: 90px;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .team-member-circle {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .team-member-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .team-member h4 {
+        font-size: 1rem;
+    }
+}
+
+/* Services */
 .services-section {
     padding: 4rem 0;
     background-color: #ffffff;
@@ -398,7 +588,7 @@ body {
     z-index: 1;
 }
 
-/* Ensure section title is visible */
+
 .service-section-title {
     color: #1f2937 !important;
     font-size: 2.5rem;
@@ -410,8 +600,7 @@ body {
     z-index: 2;
 }
 
-/* Accent divider */
-.accent-divider {
+.service-accent-divider {
     width: 60px;
     height: 4px;
     background: linear-gradient(90deg, rgb(37, 99, 235), rgb(255, 111, 97));
@@ -479,7 +668,6 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Fixed service item title styling */
 .service-item h4 {
     color: #1f2937 !important;
     font-weight: 600 !important;
