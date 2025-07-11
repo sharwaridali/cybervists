@@ -14,49 +14,59 @@
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
     <meta name="robots" content="index, follow">
     
-    <link rel="icon" type="image/png" href="img/tab.png">
+    <link rel="icon" type="image/png" href="img/cyberviststab.jpg">
     <title>Cybervists - Digital Literacy & Security</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="stylesheet/style.css" rel="stylesheet">
+    <link href="stylesheet/footer.css" rel="stylesheet">
+
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            
-            <a class="navbar-brand" href="#">Cybervists</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">Our Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Our Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
-                    </li>
-                </ul>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Cybervists</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                                About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                                <li><a class="dropdown-item" href="services.html">Our Services</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blogs.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                     <h1 class="hero-title">
+                    <h1 class="hero-title">
                         Digital Literacy, <span class="highlight-text">Security</span>,<br>
                         Responsible Use & Inclusion
                     </h1>
@@ -64,11 +74,51 @@
                         Empowering communities through responsible technology use, 
                         cybersecurity awareness, and inclusive digital education.
                     </p>
-
+                    <a href="#events" class="btn-primary-custom">
+                        <i class="fas fa-calendar-alt me-2"></i>
+                        View Upcoming Events
+                    </a>
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-logo">
                         <img src="img/cybervistslogo1.png" alt="Cybervists Logo" class="main-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Cybervists</h2>
+            <div class="accent-divider"></div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="about-content">
+                        <p>
+                            <strong>Cybervists</strong> is a pioneering organization dedicated to bridging the digital divide and creating a safer, more inclusive digital world for everyone. Founded on the principles of digital empowerment and cybersecurity awareness, we are committed to ensuring that technology serves as a tool for positive change in communities worldwide.
+                        </p>
+                        <p>
+                            Our mission extends beyond traditional tech education. We believe that true digital literacy encompasses not just the ability to use technology, but also the knowledge to use it responsibly, securely, and inclusively. Through our comprehensive programs, we address the critical gaps in digital skills, cybersecurity awareness, and equitable access to technology resources.
+                        </p>
+                        <p>
+                            At Cybervists, we work with diverse communities, from underserved populations to established organizations, providing tailored solutions that meet unique needs. Our approach combines hands-on training, awareness campaigns, and strategic partnerships to create lasting impact. We are dedicated to fostering an environment where everyone can participate confidently in the digital age.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="10">0+</span>
+                            <div class="stat-label">People Trained</div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0+</span>
+                            <div class="stat-label">Workshops Conducted</div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="6">0+</span>
+                            <div class="stat-label">Community Partners</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,7 +137,7 @@
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                         <h4>Digital Literacy</h4>
-                        <p>Building essential digital skills for the modern world through comprehensive education programs.</p>
+                        <p>Building essential digital skills for the modern world through comprehensive education programs that empower individuals to navigate technology confidently and effectively.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -96,7 +146,7 @@
                             <i class="fas fa-lock"></i>
                         </div>
                         <h4>Cybersecurity</h4>
-                        <p>Protecting individuals and organizations with cutting-edge security practices and awareness training.</p>
+                        <p>Protecting individuals and organizations with cutting-edge security practices, awareness training, and practical tools to defend against evolving digital threats.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -105,7 +155,7 @@
                             <i class="fas fa-users"></i>
                         </div>
                         <h4>Inclusion</h4>
-                        <p>Ensuring technology access and education reaches all communities, leaving no one behind.</p>
+                        <p>Ensuring technology access and education reaches all communities, breaking down barriers and creating equal opportunities for digital participation.</p>
                     </div>
                 </div>
             </div>
@@ -123,11 +173,11 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <div class="d-flex flex-column">
-                        <a href="index.html#home">Home</a>
-                        <a href="about.html">About Us</a>
-                        <a href="index.html#team">Our Team</a>
+                        <a href="#home">Home</a>
+                        <a href="#about">About Us</a>
+                        <a href="team.html">Our Team</a>
                         <a href="services.html">Our Services</a>
-                        <a href="index.html#contact">Contact Us</a>
+                        <a href="contact.html">Contact Us</a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -153,5 +203,64 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Counter Animation on Scroll
+        function animateCounter(element, target, duration = 2000) {
+            const start = 0;
+            const increment = target / (duration / 50);
+            let current = start;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current) + '+';
+            }, 50);
+        }
+        
+        // Intersection Observer for scroll trigger
+        const observerOptions = {
+            threshold: 0.3,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statItems = entry.target.querySelectorAll('.stat-item');
+                    
+                    statItems.forEach((item, index) => {
+                        const statNumber = item.querySelector('.stat-number');
+                        const target = parseInt(statNumber.getAttribute('data-target'));
+                        
+                        // Add animation class for visual effect
+                        setTimeout(() => {
+                            item.classList.add('animate');
+                            animateCounter(statNumber, target);
+                        }, index * 200); // Stagger animation
+                        
+                        // Remove animation class after animation completes
+                        setTimeout(() => {
+                            item.classList.remove('animate');
+                        }, 2500 + (index * 200));
+                    });
+                    
+                    // Unobserve after animation is triggered once
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // Start observing when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const aboutStats = document.querySelector('.about-stats');
+            if (aboutStats) {
+                observer.observe(aboutStats);
+            }
+        });
+    </script>
 </body>
 </html>

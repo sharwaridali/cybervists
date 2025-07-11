@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), payment=(), usb=(), accelerometer=(), gyroscope=(), magnetometer=(), fullscreen=(self)">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="icon" type="image/png" href="cyberviststab.jpg">
+    <title>Cybervists - Digital Literacy & Security</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="stylesheet/style.css" rel="stylesheet">
+    <link href="stylesheet/gallery.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Cybervists</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                                About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                                <li><a class="dropdown-item" href="services.html">Our Services</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blogs.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Gallery Section -->
+<section id="gallery-hero" class="gallery-hero">
+    <div class="container">
+                <h1 class="gallery-hero-title">
+                    Digital <span class="highlight-text">Moments & Memories</span>
+                </h1>
+                <p class="gallery-hero-subtitle">
+                    Explore our collection of digital literacy workshops, training sessions, and community events.
+                </p>
+            <div class="gallery">
+                <div class="gallery-item" onclick="openModal(['img/Workshop_D_1_1.jpg', 'img/Workshop_D_1_2.jpg', 'img/Workshop_D_1_3.jpg', 'img/Workshop_D_1_4.jpg', 'img/Workshop_D_1_5.jpg', 'img/Workshop_D_1_6.jpg'], 'Secure Digital Confidence building with Senior Day 1')">
+                    <img src="img/Workshop_D_1_2.jpg" alt="Thumb 1">
+                    <div class="gallery-caption">
+                        <div class="gallery-title">Secure Digital Confidence building with Senior Day 1</div>
+                        <div class="gallery-meta">
+                            <span class="gallery-count">6 Photos</span>
+                            <span class="view-more">View Gallery →</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(['img/Workshop_D_2_1.jpg', 'img/Workshop_D_2_2.jpg', 'img/Workshop_D_2_3.jpg', 'img/Workshop_D_2_4.jpg', 'img/Workshop_D_2_5.jpg', 'img/Workshop_D_2_6.jpg'], 'Secure Digital Confidence building with Senior Day 2')">
+                    <img src="img/Workshop_D_2_3.jpg" alt="Thumb 2">
+                    <div class="gallery-caption">
+                        <div class="gallery-title">Secure Digital Confidence building with Senior Day 2</div>
+                        <div class="gallery-meta">
+                            <span class="gallery-count">6 Photos</span>
+                            <span class="view-more">View Gallery →</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more gallery items here -->
+            </div>
+
+            <!-- Custom Modal -->
+            <div id="customModal" class="modal">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <span class="close-btn" onclick="closeModal()">&times;</span>
+                    <div class="modal-images" id="modalImagesContainer">
+                        <!-- Images will be dynamically added here -->
+                    </div>
+                    <div class="modal-caption" id="modalCaption"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function openModal(images, caption) {
+            const modalImagesContainer = document.getElementById("modalImagesContainer");
+            const modalCaption = document.getElementById("modalCaption");
+            
+            // Clear existing images
+            modalImagesContainer.innerHTML = '';
+            
+            // Add all images dynamically
+            images.forEach((imageSrc, index) => {
+                const img = document.createElement('img');
+                img.src = imageSrc;
+                img.alt = `Image ${index + 1}`;
+                modalImagesContainer.appendChild(img);
+            });
+            
+            modalCaption.textContent = caption;
+            document.getElementById("customModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("customModal").style.display = "none";
+        }
+
+        // Close when clicking outside modal content
+        document.getElementById("customModal").addEventListener("click", closeModal);
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

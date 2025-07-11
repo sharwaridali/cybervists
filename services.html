@@ -19,44 +19,51 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="stylesheet/style.css" rel="stylesheet">
+    <link href="stylesheet/services.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            
-            <a class="navbar-brand" href="#">Cybervists</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">Our Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Our Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
-                    </li>
-                </ul>
+     <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Cybervists</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                                About
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                                <li><a class="dropdown-item" href="services.html">Our Services</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blogs.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-
+        </nav>
+    </header>
 <!-- Services Section -->
-<div class="container">
     <section class="services-section">
         <div class="container">
             <h2 class="service-section-title">Our Services</h2>
-            <div class="accent-divider"></div>
+            <div class="service-accent-divider"></div>
             <div class="services-grid">
                 <div class="service-item">
                     <div class="service-circle">
@@ -111,7 +118,6 @@
             </div>
         </div>
     </section>
-    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -126,7 +132,7 @@
                     <div class="d-flex flex-column">
                         <a href="index.html#home">Home</a>
                         <a href="about.html">About Us</a>
-                        <a href="index.html#team">Our Team</a>
+                        <a href="team.html">Our Team</a>
                         <a href="services.html">Our Services</a>
                         <a href="index.html#contact">Contact Us</a>
                     </div>
