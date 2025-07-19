@@ -20,9 +20,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="stylesheet/style.css" rel="stylesheet">
     <link href="stylesheet/footer.css" rel="stylesheet">
+    <link href="stylesheet/reviews.css" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Your+Font:wght@400;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Your+Font:wght@400;700&display=swap">
 
 </head>
 <body>
+    
     <!-- Header -->
     <header class="header">
         <nav class="navbar navbar-expand-lg">
@@ -47,7 +51,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blogs.html">Blogs</a>
+                            <a class="nav-link" href="blog.html">Blogs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="gallery.html">Gallery</a>
@@ -88,43 +92,6 @@
         </div>
     </section>
 
-     <!-- About Us Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2 class="section-title">About Cybervists</h2>
-            <div class="accent-divider"></div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="about-content">
-                        <p>
-                            <strong>Cybervists</strong> is a pioneering organization dedicated to bridging the digital divide and creating a safer, more inclusive digital world for everyone. Founded on the principles of digital empowerment and cybersecurity awareness, we are committed to ensuring that technology serves as a tool for positive change in communities worldwide.
-                        </p>
-                        <p>
-                            Our mission extends beyond traditional tech education. We believe that true digital literacy encompasses not just the ability to use technology, but also the knowledge to use it responsibly, securely, and inclusively. Through our comprehensive programs, we address the critical gaps in digital skills, cybersecurity awareness, and equitable access to technology resources.
-                        </p>
-                        <p>
-                            At Cybervists, we work with diverse communities, from underserved populations to established organizations, providing tailored solutions that meet unique needs. Our approach combines hands-on training, awareness campaigns, and strategic partnerships to create lasting impact. We are dedicated to fostering an environment where everyone can participate confidently in the digital age.
-                        </p>
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="10">0+</span>
-                            <div class="stat-label">People Trained</div>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="5">0+</span>
-                            <div class="stat-label">Workshops Conducted</div>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="6">0+</span>
-                            <div class="stat-label">Community Partners</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Features Section -->
     <section class="features-section">
         <div class="container">
@@ -137,7 +104,7 @@
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                         <h4>Digital Literacy</h4>
-                        <p>Building essential digital skills for the modern world through comprehensive education programs that empower individuals to navigate technology confidently and effectively.</p>
+                        <p>Facilitating a future where digital literacy is a universal language, one engagement at a time, through community-centred learning ecosystems and tailored programs that emphasise inclusive education, ethical use, and responsible digital citizenship.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -146,7 +113,7 @@
                             <i class="fas fa-lock"></i>
                         </div>
                         <h4>Cybersecurity</h4>
-                        <p>Protecting individuals and organizations with cutting-edge security practices, awareness training, and practical tools to defend against evolving digital threats.</p>
+                        <p>Empowering digitally resilient communities through continuous training and events centred on cybersecurity awareness. Engage in partnerships and collaborations with local institutions and communities, collectively safeguarding our cyber landscape to enable community members to thrive.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -155,26 +122,214 @@
                             <i class="fas fa-users"></i>
                         </div>
                         <h4>Inclusion</h4>
-                        <p>Ensuring technology access and education reaches all communities, breaking down barriers and creating equal opportunities for digital participation.</p>
+                        <p>Breaking down barriers to digital inclusion by providing supportive and safe learning environments that build confidence.  for underrepresented, isolated, and vulnerable communities </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+     <!-- impact Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="100">0+</span>
+                            <div class="stat-label">People Impacted</div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="10">0+</span>
+                            <div class="stat-label">Workshops Conducted</div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="6">0+</span>
+                            <div class="stat-label">Community Partners</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">What Our Community Says</h2>
+            <div class="accent-divider"></div>
+         <!--  <div class="reviews-container"> -->
+                <div class="reviews-track">
+                    <div class="review-card">
+                        <p class="review-text">
+                            "Now I know how to join in online for the church service if I can't drive down. That's very helpful. Thank you"
+                        </p>
+                        <div class="review-footer">
+                            <div class="reviewer-info">
+                                <div class="avatar">M</div>
+                                <div class="reviewer-details">
+                                    <h4>Malia</h4>
+                                    <p class="role">Community Member</p>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <p class="review-text">
+                            "Thank you so much. I tried to sort this out two times in the market, the first person couldn't do it, and the second person charged me £90. Now, I've learnt how to do it, I should give you 90 quids. lol"
+                        </p>
+                        <div class="review-footer">
+                            <div class="reviewer-info">
+                                <div class="avatar">R</div>
+                                <div class="reviewer-details">
+                                    <h4>Reg</h4>
+                                    <p class="role">Community Member</p>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <p class="review-text">
+                            "I'm 81, I don't use computer very much but now I've learnt a lot. I'm so happy, I can share with my grand kids."
+                        </p>
+                        <div class="review-footer">
+                            <div class="reviewer-info">
+                                <div class="avatar">J</div>
+                                <div class="reviewer-details">
+                                    <h4>Jade</h4>
+                                    <p class="role">Community Member</p>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <p class="review-text">
+                            "I had the Cybervists support me in setting up my personal work system. They also delivered an Online Safety workshop for young people at C3 Centre Community during our Youth Mental Health Awareness Week Series."
+                        </p>
+                        <div class="review-footer">
+                            <div class="reviewer-info">
+                                <div class="avatar">C</div>
+                                <div class="reviewer-details">
+                                    <h4>Chinyere</h4>
+                                    <p class="role">Community Partner</p>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <p class="review-text">
+                            "Volunteering for Cybervists has helped me enhance my penetration testing skills while contributing to cybersecurity awareness. The supportive team and mentoring opportunities make it a great platform for aspiring professionals."
+                        </p>
+                        <div class="review-footer">
+                            <div class="reviewer-info">
+                                <div class="avatar">S</div>
+                                <div class="reviewer-details">
+                                    <h4>Sharwari</h4>
+                                    <p class="role">Volunteer</p>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate cards for seamless loop -->
+                    <div class="review-card">
+                        <p class="review-text">
+                            "Now I know how to join in online for the church service if I can't drive down. That's very helpful. Thank you"
+                        </p>
+                        <div class="review-footer">
+                            <div class="reviewer-info">
+                                <div class="avatar">M</div>
+                                <div class="reviewer-details">
+                                    <h4>Malia</h4>
+                                    <p class="role">Community Member</p>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <p class="review-text">
+                            "Thank you so much. I tried to sort this out two times in the market, the first person couldn't do it, and the second person charged me £90. Now, I've learnt how to do it, I should give you 90 quids. lol"
+                        </p>
+                        <div class="review-footer">
+                            <div class="reviewer-info">
+                                <div class="avatar">R</div>
+                                <div class="reviewer-details">
+                                    <h4>Reg</h4>
+                                    <p class="role">Community Member</p>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div></div></section>
+
+
+ <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Cybervists</h4>
-                    <p>Empowering communities through responsible technology use, cybersecurity awareness, and inclusive digital education.</p>
+                    <p>Digital literacy and Security, Responsible Use & Inclusion</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <div class="d-flex flex-column">
-                        <a href="#home">Home</a>
-                        <a href="#about">About Us</a>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
                         <a href="team.html">Our Team</a>
                         <a href="services.html">Our Services</a>
                         <a href="contact.html">Contact Us</a>
@@ -184,23 +339,26 @@
                     <h4>Get Involved</h4>
                     <div class="d-flex flex-column">
                         <a href="#volunteer">Volunteer</a>
-                        <a href="#donate">Donate</a>
-                        <a href="#partnerships">Partnerships</a>
+                        <!-- <a href="#donate">Donate</a> -->
+                        <!-- <a href="#partnerships">Partnerships</a> -->
                         <a href="#newsletter">Newsletter</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/share/g/1BMeDvzvh9/?mibextid=wwXIfr"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@Cybervists_community"><i class="fab fa-youtube"></i></a>
                     <a href="https://www.linkedin.com/company/cybervists/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/cybervists?igsh=MTNuN2VzNTg2b2Mwdw=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/cybervists?igsh=MTNuN2VzNTg2b2Mwdw=="><i
+                            class="fab fa-instagram"></i></a>
                 </div>
                 <p>&copy; 2025 Cybervists. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     
@@ -262,5 +420,7 @@
             }
         });
     </script>
+    
+
 </body>
 </html>

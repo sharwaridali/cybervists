@@ -20,6 +20,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="stylesheet/style.css" rel="stylesheet">
     <link href="stylesheet/gallery.css" rel="stylesheet">
+    <link href="stylesheet/footer.css" rel="stylesheet">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Your+Font:wght@400;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Your+Font:wght@400;700&display=swap">
+
 </head>
 <body>
     <!-- Header -->
@@ -46,7 +51,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blogs.html">Blogs</a>
+                            <a class="nav-link" href="blog.html">Blogs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="gallery.html">Gallery</a>
@@ -70,22 +75,23 @@
                     Explore our collection of digital literacy workshops, training sessions, and community events.
                 </p>
             <div class="gallery">
-                <div class="gallery-item" onclick="openModal(['img/Workshop_D_1_1.jpg', 'img/Workshop_D_1_2.jpg', 'img/Workshop_D_1_3.jpg', 'img/Workshop_D_1_4.jpg', 'img/Workshop_D_1_5.jpg', 'img/Workshop_D_1_6.jpg'], 'Secure Digital Confidence building with Senior Day 1')">
+                <div class="gallery-item" onclick="openModal(['img/Workshop_D_1_1.jpg', 'img/Workshop_D_1_2.jpg', 'img/Workshop_D_1_3.jpg', 'img/Workshop_D_1_4.jpg', 'img/Workshop_D_1_5.jpg', 'img/Workshop_D_1_6.jpg'
+                    ,'img/Workshop_D_2_1.jpg', 'img/Workshop_D_2_2.jpg', 'img/Workshop_D_2_3.jpg', 'img/Workshop_D_2_4.jpg', 'img/Workshop_D_2_5.jpg', 'img/Workshop_D_2_6.jpg'], 'Secure Digital Confidence building with Seniors')">
                     <img src="img/Workshop_D_1_2.jpg" alt="Thumb 1">
                     <div class="gallery-caption">
-                        <div class="gallery-title">Secure Digital Confidence building with Senior Day 1</div>
+                        <div class="gallery-title">Secure Digital Confidence building with Seniors</div>
                         <div class="gallery-meta">
                             <span class="gallery-count">6 Photos</span>
                             <span class="view-more">View Gallery →</span>
                         </div>
                     </div>
                 </div>
-                <div class="gallery-item" onclick="openModal(['img/Workshop_D_2_1.jpg', 'img/Workshop_D_2_2.jpg', 'img/Workshop_D_2_3.jpg', 'img/Workshop_D_2_4.jpg', 'img/Workshop_D_2_5.jpg', 'img/Workshop_D_2_6.jpg'], 'Secure Digital Confidence building with Senior Day 2')">
-                    <img src="img/Workshop_D_2_3.jpg" alt="Thumb 2">
+                <div class="gallery-item" onclick="openModal(['img/Kids_onlinesafety_event.jpg','img/Tech_Nuture_initiative_.jpg','img/NHS_cybesecurity_presentation.JPG', 'img/Tech_Nurture_2.jpg'], 'Other Projects')">
+                    <img src="img/Tech_Nuture_initiative_.jpg" alt="Thumb 2">
                     <div class="gallery-caption">
-                        <div class="gallery-title">Secure Digital Confidence building with Senior Day 2</div>
+                        <div class="gallery-title">Other Projects</div>
                         <div class="gallery-meta">
-                            <span class="gallery-count">6 Photos</span>
+                            <span class="gallery-count">4 Photos</span>
                             <span class="view-more">View Gallery →</span>
                         </div>
                     </div>
@@ -105,6 +111,50 @@
             </div>
         </div>
     </section>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Cybervists</h4>
+                    <p>Empowering communities through responsible technology use, cybersecurity awareness, and inclusive
+                        digital education.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <div class="d-flex flex-column">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="team.html">Our Team</a>
+                        <a href="services.html">Our Services</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Get Involved</h4>
+                    <div class="d-flex flex-column">
+                        <a href="#volunteer">Volunteer</a>
+                        <!-- <a href="#donate">Donate</a> -->
+                        <!-- <a href="#partnerships">Partnerships</a> -->
+                        <a href="#newsletter">Newsletter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/g/1BMeDvzvh9/?mibextid=wwXIfr"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@Cybervists_community"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/cybervists/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/cybervists?igsh=MTNuN2VzNTg2b2Mwdw=="><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2025 Cybervists. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
 
     <script>
         function openModal(images, caption) {
